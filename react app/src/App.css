@@ -1,0 +1,127 @@
+/* styling fetch API */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand name */
+.brand {
+  font-size: 24px;
+}
+
+/* Get Users button */
+.btn-get-users {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.btn-get-users:hover {
+  background-color: #c0392b;
+}
+
+/* Loader section styling */
+.loaderSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+/* Loader animation */
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+/* Loader animation shapes */
+.loader .circle,
+.loader .line-1,
+.loader .line-2 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 8px;
+  left: 8px;
+  border-radius: 50%;
+  border: 6px solid #007bff;
+  border-color: #007bff transparent #007bff transparent;
+  animation: loaderAnimation 1.2s linear infinite;
+}
+
+/* ... (same loader styles as before) ... */
+
+/* User data section styling */
+.dataSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 2rem;
+}
+
+/* User data card styling */
+.data {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for user data card */
+.data:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar image styling */
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+/* Text container for user data */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* User name styling */
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* User email styling */
+.email {
+  font-size: 16px;
+  color: #777;
+}
